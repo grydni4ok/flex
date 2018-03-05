@@ -24,59 +24,14 @@
              : flex-end; - блоки прижимаются  к концу встпомогательной оси
              : flex-end; - блоки прижимаются  к началу встпомогательной оси
              : baseline;  - выравнивание блоков относительно их базовай линии
+	     
+  flex-wrap: wrap; - разрешает перенос flex элементов, по умолчанию стоит none
+  	   : wrap-reverse; - ряды начинают выстраиваться в обратном направлении (вверх)
+	   
+  align-content: stretch; - растягивание элементов вдоль поперечной оси
+  	       : center; - ряды группируются по центру поперечной оси
+	       : space-around; - равномерное распределение от начала к концу + отступы в начале и конце вдоль поперечной оси
+	       : space-between; - рвномерное распределение от начала к концу вдоль поперечной оси
 }
 
-<!DOCTYPE html>
-	<html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<title>Flex</title>
-		<style>
-			body{
-				background: #fefefe;
-				margin: 0;
-				padding: 0;
-				font: 1em/1.3em Arial, sans-serif;
-				color: #272727;
-			}
-			img{
-				margin: 0;
-				padding: 0;
-				vertical-align: middle;
-				boredr: none;
-			}
-			.main{
-				margin: 20px;
-				border: 1px solid #ccc;
-				padding: 20px;
-				background: #fff;
-				border-radius: 3px;
-			}
-			.bl{
-				padding: 5px 10px;
-				border: 1px solid #ddd;
-				background: #fffde1;
-				border-radius: 3px;
-				margin: 20px;
-			}
-			.main{
-				display: -webkit-flex;
-				display: -moz-flex;
-				display: -ms-flex;
-				display: -o-flex;
-				display: flex;
-				height: 500px;
-			}
-		</style>
-	</head>
-	<body>
-		<div class="main">
-			<div class="bl fl1">1</div>
-			<div class="bl fl2">2</div>
-			<div class="bl fl3">3</div>
-			<div class="bl fl4">4</div>
-			<div class="bl fl5">5</div>
-			<div class="bl fl6">6</div>
-		</div>
-	</body>
-	</html>	
+
